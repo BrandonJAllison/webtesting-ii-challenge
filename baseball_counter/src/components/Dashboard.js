@@ -16,9 +16,9 @@ class Dashboard extends Component {
     return (
       <div style={{marginTop: '100px'}}>
 
-        <button style={styleBtn} data-testid='strike-button' onClick={this.props.resetStrikes}><i class="fas fa-times-circle"></i>  Strike</button>
+        <button style={styleBtn} data-testid='strike-button' onClick={this.props.resetStrikes}><i className="fas fa-times-circle"></i>  Strike</button>
 
-        <button style={styleBtn} data-testid='ball-button'   onClick={this.props.resetBalls}><i class="fas fa-baseball-ball"></i>  Ball</button>
+        <button style={styleBtn} data-testid='ball-button'   onClick={this.props.resetBalls}><i className="fas fa-baseball-ball"></i>  Ball</button>
 
         <button style={styleBtn} data-testid='hit-button'    onClick={this.props.resetHits}>Hit</button>
 

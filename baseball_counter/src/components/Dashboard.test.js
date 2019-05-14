@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render } from 'react-testing-library';
+import {render} from 'react-testing-library';
 import 'jest-dom/extend-expect';
 import 'react-testing-library/cleanup-after-each';
 import Dashboard from './Dashboard';
