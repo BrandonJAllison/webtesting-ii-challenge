@@ -15,11 +15,13 @@ describe('The Display Component' , () => {
 
       test("It should increase ball count by clicking ball button", () => {
          const component = render(<Dashboard />);
+         const display = render(<Display/>);
          const ballButton = component.getByTestId("ball-button");
          fireEvent.click(ballButton);
-         const display = render(<Display balls= "0" strikes = "0" />);
+         
          const counter = display.getByTestId('ball');
-         expect(counter).toHaveTextContent("0");
+         expect(counter).toHaveTextContent("1");
+         
       });
 
       test("It should increase strike count by clicking the strike button", () => {
